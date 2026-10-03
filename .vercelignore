@@ -3,7 +3,7 @@ node_modules/
 dist/
 artifacts/
 scripts/
-athlete-desktop.jpg
-athlete-mobile.jpg
-pssgm-logo.png
+/athlete-desktop.jpg
+/athlete-mobile.jpg
+/pssgm-logo.png
 .env*
