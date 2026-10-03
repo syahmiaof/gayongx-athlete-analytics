@@ -1,0 +1,58 @@
+[
+  {
+    "name": "mobile water tab",
+    "pass": true
+  },
+  {
+    "name": "mobile nutrition tab",
+    "pass": true
+  },
+  {
+    "name": "mobile calories tab",
+    "pass": true
+  },
+  {
+    "name": "mobile combat tab",
+    "pass": true
+  },
+  {
+    "name": "mobile day selection",
+    "pass": true
+  },
+  {
+    "name": "mobile full week",
+    "pass": true
+  },
+  {
+    "name": "weight log",
+    "pass": true
+  },
+  {
+    "name": "water log",
+    "pass": true
+  },
+  {
+    "name": "profile edit",
+    "pass": true
+  },
+  {
+    "name": "profile tab",
+    "pass": true
+  },
+  {
+    "name": "video annotations",
+    "pass": true
+  },
+  {
+    "name": "match analysis tab",
+    "pass": true
+  },
+  {
+    "name": "settings persistence",
+    "pass": true
+  },
+  {
+    "name": "dialog escape",
+    "pass": true
+  }
+]

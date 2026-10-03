@@ -1,0 +1,437 @@
+/* Release visual corrections. Measurements follow the 1672 x 941 approved frame. */
+@media (min-width: 1351px) {
+  .brand-header {
+    height: clamp(136px, 8.5vw, 163px);
+  }
+  .sidebar-logo {
+    height: clamp(166px, 10.4vw, 199px);
+  }
+  .desktop-sidebar nav a {
+    height: clamp(49px, 3.06vw, 59px);
+    font-family: "Barlow", sans-serif;
+    font-size: 13px;
+    gap: 20px;
+  }
+  .athlete-hero {
+    height: clamp(134px, 8.375vw, 161px);
+  }
+  .hero-athlete {
+    width: clamp(205px, 13vw, 249px);
+  }
+  .metric-card {
+    height: clamp(125px, 7.8125vw, 150px);
+  }
+  .analytics-grid {
+    height: clamp(261px, 16.3125vw, 313px);
+  }
+  .lower-grid {
+    height: clamp(201px, 12.5625vw, 241px);
+  }
+  .dashboard-content {
+    gap: clamp(10px, 0.65vw, 12.5px);
+  }
+  .match-stack {
+    grid-template-rows: 59% 1fr;
+    gap: 6px;
+  }
+  .weekly-schedule table {
+    height: calc(100% - 29px);
+  }
+  .brand-word {
+    font-size: clamp(49px, 3.15vw, 60px);
+    transform: scaleX(1.5);
+  }
+  .brand-sub {
+    font-size: clamp(25px, 1.55vw, 30px);
+    letter-spacing: 5.5px;
+  }
+  .brand-tag {
+    font-size: 13px;
+    letter-spacing: 2.7px;
+  }
+  .brand-header:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 270px;
+    height: 100%;
+    background: url("/assets/header-heritage-demo.jpg") right top/270px auto
+      no-repeat;
+    opacity: 0.75;
+    mask-image: linear-gradient(90deg, transparent, #000 40%);
+  }
+  .athlete-info h1 {
+    font-size: 24px;
+    letter-spacing: -0.3px;
+  }
+  .athlete-meta {
+    font-family: "Barlow", sans-serif;
+    font-size: 12px;
+    gap: 17px;
+  }
+  .athlete-club p {
+    font-family: "Barlow", sans-serif;
+    font-size: 12px;
+  }
+  .metric-label {
+    font-family: "Barlow", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .metric-content {
+    margin-top: 13px;
+    gap: 9px;
+  }
+  .metric-content strong {
+    font-family: "Barlow", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+  }
+  .metric-content strong small {
+    font-size: 12px;
+    letter-spacing: 0;
+  }
+  .metric-detail,
+  .metric-foot {
+    font-family: "Barlow", sans-serif;
+    font-size: 11px;
+  }
+  .metric-progress {
+    margin-top: 9px;
+  }
+  .metric-sleep .metric-content {
+    gap: 7px;
+  }
+  .metric-sleep .metric-content strong {
+    font-size: 22px;
+  }
+  .metric-sleep .metric-content > svg {
+    width: 25px;
+  }
+  .readiness-ring strong {
+    font-family: "Barlow", sans-serif;
+    font-size: 33px;
+    font-weight: 600;
+  }
+  .readiness-status span {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 12px;
+  }
+  .weekly-schedule table {
+    font-family: "Barlow", sans-serif;
+    font-size: 11px;
+  }
+  .weekly-schedule th {
+    font-size: 10px;
+  }
+  .schedule-status {
+    font-family: "Barlow", sans-serif;
+    font-size: 10px;
+  }
+  .chart-tabs button {
+    font-family: "Barlow", sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+  }
+  .performance-chart svg,
+  .capability-chart svg {
+    font-family: "Barlow", sans-serif;
+  }
+  .performance-chart svg text {
+    font-size: 12px;
+  }
+  .capability-chart svg text {
+    font-size: 12px;
+  }
+  .capability-chart svg text:last-child {
+    font-size: 19px;
+  }
+  .capability-chart svg .radar-subtitle {
+    font-size: 11px;
+  }
+  .panel-heading h2 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .donut-legend button {
+    font-family: "Barlow", sans-serif;
+    font-size: 10.5px;
+    gap: 7px;
+    margin: 10px 0;
+  }
+  .donut-legend b {
+    font-size: 11px;
+  }
+  .donut {
+    width: 43%;
+  }
+  .session-row strong {
+    font-family: "Barlow", sans-serif;
+    font-size: 11px;
+  }
+  .session-row p {
+    font-family: "Barlow", sans-serif;
+    font-size: 10px;
+    line-height: 1.3;
+  }
+  .session-row {
+    gap: 8px;
+  }
+  .recent-sessions {
+    height: calc(100% - 24px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .session-done {
+    font-size: 12px;
+  }
+  .benchmark-row {
+    font-size: 13px;
+    grid-template-columns: 18px 1fr 40% 23px;
+  }
+  .benchmark-row > span {
+    white-space: normal;
+    line-height: 1.1;
+  }
+  .benchmark-row small {
+    font-size: 8px;
+  }
+  .match-body strong {
+    font-size: 14px;
+  }
+  .match-body {
+    align-items: center;
+  }
+  .match-thumb {
+    height: clamp(78px, 4.9vw, 94px);
+    width: 45%;
+  }
+  .coach-body p {
+    font-family: "Barlow", sans-serif;
+    font-size: 10px;
+    line-height: 1.25;
+  }
+  .coach-body small {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 10px;
+  }
+  .coach-body q {
+    margin-top: 3px;
+  }
+}
+@media (max-width: 900px) {
+  .brand-header {
+    height: 78px;
+  }
+  .brand-word {
+    font-size: 32px;
+    transform: scaleX(1.35);
+  }
+  .brand-sub {
+    font-size: 14px;
+    letter-spacing: 3px;
+  }
+  .hero-athlete {
+    width: 42%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 38%;
+    background: none;
+    mask-image: linear-gradient(90deg, #000 76%, transparent);
+  }
+  .athlete-info {
+    padding: 15px 4px 5px 42%;
+  }
+  .athlete-info h1 {
+    font-size: 19px;
+    line-height: 1.2;
+    padding-right: 34px;
+  }
+  .athlete-role {
+    font-size: 11px;
+    letter-spacing: 0.4px;
+    margin: 5px 0 10px;
+  }
+  .athlete-meta {
+    font-size: 12px;
+    column-gap: 10px;
+    row-gap: 6px;
+  }
+  .athlete-info blockquote {
+    font-size: 11px;
+    margin-top: 8px;
+  }
+  .mobile-hero-logo {
+    right: 5px;
+    top: 14px;
+  }
+  .mobile-hero-logo img {
+    width: 49px !important;
+    height: 60px !important;
+  }
+  .mobile-metrics {
+    grid-template-rows: 112px 98px 98px;
+  }
+  .mobile-metrics .metric-card {
+    height: 100%;
+    padding: 9px 8px;
+  }
+  .metric-label {
+    font-family: "Barlow", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  .metric-content strong {
+    font-size: 26px;
+    font-weight: 600;
+  }
+  .metric-content {
+    gap: 7px;
+    margin-top: 9px;
+  }
+  .metric-content > svg {
+    width: 22px;
+    height: 25px;
+  }
+  .metric-detail {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 13px;
+  }
+  .metric-load .metric-detail {
+    font-size: 11px;
+    white-space: normal;
+    line-height: 1.05;
+  }
+  .metric-foot {
+    font-size: 13px;
+  }
+  .readiness-ring {
+    width: 70px;
+    height: 74px;
+  }
+  .readiness-ring strong {
+    font-family: "Barlow", sans-serif;
+    font-size: 27px;
+    font-weight: 600;
+  }
+  .readiness-status span {
+    font-size: 11px;
+  }
+  .readiness-status strong {
+    font-size: 12px;
+  }
+  .mobile-performance {
+    height: 210px;
+  }
+  .mobile-capability {
+    height: 230px;
+  }
+  .mobile-performance .chart-tabs button {
+    font-family: "Barlow", sans-serif;
+    font-size: 9px;
+    font-weight: 500;
+  }
+  .mobile-performance .performance-chart svg {
+    font-family: "Barlow", sans-serif;
+  }
+  .mobile-performance .performance-chart svg text {
+    font-size: 15px;
+  }
+  .capability-chart.with-summary {
+    grid-template-columns: 1.15fr 1fr;
+    gap: 5px;
+  }
+  .capability-chart.with-summary > svg {
+    overflow: visible;
+  }
+  .radar-summary {
+    padding: 4px;
+  }
+  .radar-summary > div {
+    grid-template-columns: 1fr 27px 18px;
+    gap: 4px;
+    font-size: 12px;
+    margin: 8px 0;
+  }
+  .radar-summary strong {
+    font-size: 14px;
+  }
+  .mobile-bottom-nav {
+    height: calc(66px + env(safe-area-inset-bottom));
+    background: #0a0b0e;
+    border-top-color: #32262b;
+  }
+  .mobile-bottom-nav button {
+    font-size: 14px;
+    gap: 4px;
+  }
+  .mobile-bottom-nav svg {
+    width: 23px;
+    height: 23px;
+  }
+  .app-shell {
+    padding-bottom: calc(73px + env(safe-area-inset-bottom));
+  }
+  .gx-mobile-training {
+    padding: 0 0 10px;
+  }
+  .gx-training-session {
+    min-height: 74px;
+  }
+  .gx-training-session-copy h3 {
+    font-size: 18px;
+  }
+  .gx-training-session-copy p {
+    font-size: 13px;
+  }
+  .gx-training-heading h2 {
+    font-size: 20px;
+  }
+  .gx-training-days strong {
+    font-size: 24px;
+  }
+  .gx-training-status {
+    font-size: 12px;
+  }
+  .gx-training-nutrition-content svg text {
+    font-family: "Barlow", sans-serif;
+    font-size: 10px;
+  }
+}
+.hero-picture {
+  display: contents;
+}
+@media (max-width: 900px) {
+  .athlete-info {
+    padding-top: 12px;
+  }
+  .athlete-role {
+    margin: 4px 0 8px;
+  }
+  .athlete-info blockquote {
+    margin-top: 5px;
+    line-height: 1.2;
+  }
+  .mobile-capability .capability-chart svg text {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 15px;
+  }
+  .mobile-capability .capability-chart svg text:last-child {
+    font-size: 23px;
+  }
+}
+/* Short desktop windows scroll the sidebar instead of painting heritage behind links. */
+.desktop-sidebar {
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+.desktop-sidebar > nav,
+.sidebar-heritage {
+  flex-shrink: 0;
+}
+.header-actions{z-index:2}
+@media(max-width:900px){html{scroll-padding-bottom:calc(76px + env(safe-area-inset-bottom))}.gx-panel,.gx-training-panel{scroll-margin-bottom:calc(76px + env(safe-area-inset-bottom))}}

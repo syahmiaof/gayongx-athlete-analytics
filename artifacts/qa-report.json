@@ -1,0 +1,301 @@
+{
+  "viewports": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "metrics": 8,
+      "brokenImages": [],
+      "clippedMetrics": []
+    },
+    {
+      "width": 1600,
+      "height": 900,
+      "scrollWidth": 1600,
+      "metrics": 8,
+      "brokenImages": [],
+      "clippedMetrics": []
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "scrollWidth": 1440,
+      "metrics": 8,
+      "brokenImages": [],
+      "clippedMetrics": []
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "scrollWidth": 1280,
+      "metrics": 8,
+      "brokenImages": [],
+      "clippedMetrics": []
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "scrollWidth": 1024,
+      "metrics": 8,
+      "brokenImages": [],
+      "clippedMetrics": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "scrollWidth": 768,
+      "metrics": 9,
+      "brokenImages": [],
+      "clippedMetrics": []
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "scrollWidth": 430,
+      "metrics": 9,
+      "brokenImages": [],
+      "clippedMetrics": []
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "metrics": 9,
+      "brokenImages": [],
+      "clippedMetrics": []
+    }
+  ],
+  "routes": [
+    {
+      "width": 1600,
+      "route": "dashboard",
+      "overflow": false,
+      "content": 1936,
+      "heading": "Prestasi Terkini"
+    },
+    {
+      "width": 1600,
+      "route": "profil",
+      "overflow": false,
+      "content": 668,
+      "heading": "Profil Atlet"
+    },
+    {
+      "width": 1600,
+      "route": "prestasi",
+      "overflow": false,
+      "content": 857,
+      "heading": "Analisis Prestasi"
+    },
+    {
+      "width": 1600,
+      "route": "latihan",
+      "overflow": false,
+      "content": 906,
+      "heading": "Jadual Latihan"
+    },
+    {
+      "width": 1600,
+      "route": "nutrisi",
+      "overflow": false,
+      "content": 685,
+      "heading": "Nutrisi & Berat"
+    },
+    {
+      "width": 1600,
+      "route": "recovery",
+      "overflow": false,
+      "content": 709,
+      "heading": "Recovery, Kesihatan & Kualiti Tidur"
+    },
+    {
+      "width": 1600,
+      "route": "perlawanan",
+      "overflow": false,
+      "content": 718,
+      "heading": "Analisis Perlawanan"
+    },
+    {
+      "width": 1600,
+      "route": "video",
+      "overflow": false,
+      "content": 585,
+      "heading": "Video & Teknik"
+    },
+    {
+      "width": 1600,
+      "route": "benchmark",
+      "overflow": false,
+      "content": 795,
+      "heading": "Benchmark Atlet"
+    },
+    {
+      "width": 1600,
+      "route": "pasukan",
+      "overflow": false,
+      "content": 798,
+      "heading": "Pasukan, Barisan Jurulatih & Kontinjen Perak"
+    },
+    {
+      "width": 1600,
+      "route": "laporan",
+      "overflow": false,
+      "content": 649,
+      "heading": "Laporan Prestasi Atlet"
+    },
+    {
+      "width": 1600,
+      "route": "tetapan",
+      "overflow": false,
+      "content": 617,
+      "heading": "Tetapan"
+    },
+    {
+      "width": 390,
+      "route": "dashboard",
+      "overflow": false,
+      "content": 717,
+      "heading": "MUHAMMAD HAZIQ BIN ISKANDAR"
+    },
+    {
+      "width": 390,
+      "route": "profil",
+      "overflow": false,
+      "content": 668,
+      "heading": "Profil Atlet"
+    },
+    {
+      "width": 390,
+      "route": "prestasi",
+      "overflow": false,
+      "content": 803,
+      "heading": "Analisis Prestasi"
+    },
+    {
+      "width": 390,
+      "route": "latihan",
+      "overflow": false,
+      "content": 673,
+      "heading": "Jadual Latihan"
+    },
+    {
+      "width": 390,
+      "route": "nutrisi",
+      "overflow": false,
+      "content": 685,
+      "heading": "Nutrisi & Berat"
+    },
+    {
+      "width": 390,
+      "route": "recovery",
+      "overflow": false,
+      "content": 709,
+      "heading": "Recovery, Kesihatan & Kualiti Tidur"
+    },
+    {
+      "width": 390,
+      "route": "perlawanan",
+      "overflow": false,
+      "content": 718,
+      "heading": "Analisis Perlawanan"
+    },
+    {
+      "width": 390,
+      "route": "video",
+      "overflow": false,
+      "content": 585,
+      "heading": "Video & Teknik"
+    },
+    {
+      "width": 390,
+      "route": "benchmark",
+      "overflow": false,
+      "content": 741,
+      "heading": "Benchmark Atlet"
+    },
+    {
+      "width": 390,
+      "route": "pasukan",
+      "overflow": false,
+      "content": 798,
+      "heading": "Pasukan, Barisan Jurulatih & Kontinjen Perak"
+    },
+    {
+      "width": 390,
+      "route": "laporan",
+      "overflow": false,
+      "content": 649,
+      "heading": "Laporan Prestasi Atlet"
+    },
+    {
+      "width": 390,
+      "route": "tetapan",
+      "overflow": false,
+      "content": 617,
+      "heading": "Tetapan"
+    }
+  ],
+  "interactions": [
+    {
+      "name": "performance tab",
+      "pass": true
+    },
+    {
+      "name": "performance period",
+      "pass": true
+    },
+    {
+      "name": "benchmark empty state",
+      "pass": true
+    },
+    {
+      "name": "benchmark group",
+      "pass": true
+    },
+    {
+      "name": "distribution period",
+      "pass": true
+    },
+    {
+      "name": "schedule week",
+      "pass": true
+    },
+    {
+      "name": "read notifications",
+      "pass": true
+    },
+    {
+      "name": "search routing",
+      "pass": true
+    },
+    {
+      "name": "training completion",
+      "pass": true
+    },
+    {
+      "name": "CSV export",
+      "pass": true
+    },
+    {
+      "name": "settings save",
+      "pass": true
+    },
+    {
+      "name": "mobile training navigation",
+      "pass": true
+    },
+    {
+      "name": "mobile more routes",
+      "pass": true
+    },
+    {
+      "name": "mobile secondary navigation",
+      "pass": true
+    },
+    {
+      "name": "mobile profile routing",
+      "pass": true
+    }
+  ],
+  "errors": []
+}

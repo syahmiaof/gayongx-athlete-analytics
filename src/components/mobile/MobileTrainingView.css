@@ -1,0 +1,445 @@
+.gx-mobile-training {
+  padding: 8px 10px 20px;
+  color: var(--gx-white, #f3f5f7);
+  background: var(--gx-bg, #050607);
+}
+.gx-mobile-training button {
+  font: inherit;
+  cursor: pointer;
+  transition:
+    background-color 0.18s,
+    color 0.18s,
+    border-color 0.18s;
+}
+.gx-mobile-training button:focus-visible {
+  outline: 2px solid var(--gx-yellow, #f0d313);
+  outline-offset: 3px;
+}
+.gx-training-panel {
+  margin-bottom: 10px;
+  min-width: 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  background: linear-gradient(120deg, #101112, #080a0b);
+  overflow: hidden;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.025);
+}
+.gx-training-heading {
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 7px;
+  padding: 6px 10px 6px 13px;
+  position: relative;
+}
+.gx-training-heading::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 25px;
+  left: 0;
+  top: 7px;
+  background: var(--gx-red, #e61e2b);
+  border-radius: 2px;
+}
+.gx-training-heading h2 {
+  font-size: 19px;
+  line-height: 1.1;
+  font-weight: 600;
+  margin: 0;
+}
+.gx-training-heading button {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  flex-shrink: 0;
+  color: var(--gx-red, #e61e2b);
+  font-size: 12px;
+  padding: 5px 0;
+  background: none;
+  border: 0;
+}
+.gx-training-heading button:hover {
+  color: #ff6b75;
+}
+.gx-training-days {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 5px;
+  padding: 1px 9px 10px;
+}
+.gx-training-days button {
+  color: #afb2b6;
+  background: linear-gradient(130deg, #141617, #090a0b);
+  border: 1px solid #292b2d;
+  border-radius: 5px;
+  padding: 5px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.05;
+  gap: 5px;
+}
+.gx-training-days span {
+  font-size: 12px;
+}
+.gx-training-days strong {
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--gx-white, #f3f5f7);
+}
+.gx-training-days button[aria-pressed="true"] {
+  background: linear-gradient(110deg, #ff182e, #d71121);
+  border-color: #ff2a3b;
+  color: white;
+  box-shadow: 0 0 9px #e61e2b22;
+}
+.gx-training-sessions {
+  padding: 0 7px 7px;
+  display: grid;
+  gap: 6px;
+}
+.gx-training-session {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  position: relative;
+  min-height: 78px;
+  padding: 10px 8px 10px 12px;
+  background: linear-gradient(110deg, #141617, #0b0d0f);
+  border: 1px solid #25282a;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.gx-training-session::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: #9b9da2;
+}
+.gx-training-session.is-combat::before {
+  background: var(--gx-red, #e61e2b);
+}
+.gx-training-session.is-strength::before {
+  background: var(--gx-yellow, #f0d313);
+}
+.gx-training-session-icon {
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  stroke-width: 2.3;
+}
+.is-combat .gx-training-session-icon {
+  color: var(--gx-red, #e61e2b);
+}
+.gx-training-session-copy {
+  flex: 1;
+  min-width: 0;
+}
+.gx-training-session-copy h3 {
+  margin: 0 0 4px;
+  font-size: 17px;
+  line-height: 1.05;
+  font-weight: 500;
+}
+.gx-training-session-copy p {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin: 1px 0;
+  color: #c4c5c7;
+  font-size: 12px;
+  line-height: 1.25;
+}
+.gx-training-session-copy p svg {
+  flex-shrink: 0;
+}
+.gx-training-status {
+  flex-shrink: 0;
+  font-size: 11px;
+  line-height: 1;
+  background: #2b2e32;
+  border: 1px solid #373a3e;
+  border-radius: 6px;
+  padding: 7px 6px;
+  color: #e2e3e5;
+}
+.gx-training-status.is-today {
+  background: #e61126;
+  color: #fff;
+  border-color: #f21c31;
+}
+.gx-nutrition-tabs {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  border-bottom: 1px solid #27292b;
+  padding: 0 9px;
+}
+.gx-nutrition-tabs button {
+  background: none;
+  border: 0;
+  border-bottom: 3px solid transparent;
+  color: #999da0;
+  padding: 8px 2px;
+  font-size: 12px;
+}
+.gx-nutrition-tabs button[aria-selected="true"] {
+  color: #fff;
+  border-bottom-color: var(--gx-red, #e61e2b);
+  font-weight: 600;
+}
+.gx-training-nutrition-content {
+  padding: 8px 10px 6px;
+  min-height: 180px;
+}
+.gx-training-weight-stat {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 45px;
+}
+.gx-training-weight-stat > strong {
+  font-size: 30px;
+  font-weight: 600;
+  white-space: nowrap;
+  line-height: 1;
+}
+.gx-training-weight-stat > strong small {
+  font-size: 23px;
+}
+.gx-training-weight-change {
+  font-size: 14px;
+  line-height: 1.2;
+  color: #d8d9db;
+}
+.gx-training-weight-change small {
+  display: block;
+  font-size: 11px;
+  color: #999da0;
+}
+.gx-training-target {
+  font-size: 11px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-left: auto;
+}
+.gx-training-target b {
+  font-size: 14px;
+  padding: 4px 7px;
+  border-radius: 5px;
+  background: #12391f;
+  color: #b7f2c8;
+  white-space: nowrap;
+}
+.gx-training-nutrition-content > div > div.relative {
+  height: 125px;
+}
+.gx-training-nutrition-content svg text {
+  font-family: inherit;
+  font-size: 10px;
+}
+.gx-training-nutrition-detail {
+  min-height: 162px;
+  padding-top: 4px;
+}
+.gx-training-detail-stat {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 13px;
+}
+.gx-training-detail-stat > strong {
+  font-size: 34px;
+  line-height: 1;
+  font-weight: 600;
+}
+.gx-training-detail-stat > strong small {
+  font-size: 20px;
+}
+.gx-training-detail-stat > span {
+  font-size: 15px;
+  line-height: 1.25;
+}
+.gx-training-detail-stat > span small {
+  color: #9da3a6;
+  font-size: 12px;
+}
+.gx-training-macro {
+  display: grid;
+  grid-template-columns: 95px 45px 1fr;
+  gap: 8px;
+  align-items: center;
+  font-size: 13px;
+  margin: 9px 0;
+}
+.gx-training-macro > div,
+.gx-combat-progress {
+  height: 7px;
+  border-radius: 3px;
+  background: #282b2f;
+  overflow: hidden;
+}
+.gx-training-macro i,
+.gx-combat-progress i {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, #13d876, #45e46e);
+  border-radius: 3px;
+}
+.gx-training-water {
+  display: flex;
+  gap: 5px;
+  margin: 15px 0 12px;
+}
+.gx-training-water i {
+  flex: 1;
+  height: 33px;
+  border: 1px solid #313c43;
+  border-radius: 3px 3px 8px 8px;
+  background: #11181d;
+}
+.gx-training-water .is-filled {
+  background: #29aee0;
+  border-color: #55cff8;
+}
+.gx-training-detail-note {
+  font-size: 12px;
+  color: #abb3b8;
+}
+.gx-training-food-log {
+  display: grid;
+  gap: 9px;
+  font-size: 14px;
+}
+.gx-training-food-log span {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #25282b;
+  padding-bottom: 5px;
+}
+.gx-training-food-log b {
+  color: #ddd;
+  font-weight: 500;
+}
+.gx-combat-tabs {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 5px;
+  padding: 0 8px 10px;
+}
+.gx-combat-tabs button {
+  padding: 7px 3px;
+  border-radius: 5px;
+  border: 1px solid #2f3236;
+  color: #c7c9cd;
+  background: #101214;
+  font-size: 14px;
+}
+.gx-combat-tabs button[aria-selected="true"] {
+  color: #fff;
+  background: #e9162b;
+  border-color: #fc283d;
+}
+.gx-combat-metrics {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  padding: 0 8px 9px;
+}
+.gx-combat-metric {
+  background: linear-gradient(130deg, #121617, #0a0c0e);
+  border: 1px solid #303437;
+  border-radius: 7px;
+  padding: 9px;
+  min-width: 0;
+}
+.gx-combat-metric h3 {
+  margin: 0 0 7px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.1;
+  text-align: center;
+  white-space: nowrap;
+}
+.gx-combat-metric > div:not(.gx-combat-progress) {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 9px;
+}
+.gx-combat-icon {
+  width: 28px;
+  height: 32px;
+  flex-shrink: 0;
+}
+.gx-combat-icon.is-red {
+  color: #f31834;
+}
+.gx-combat-icon.is-green {
+  color: #1bd577;
+}
+.gx-combat-icon.is-yellow {
+  color: #f3dc11;
+  fill: #f3dc11;
+}
+.gx-combat-metric strong {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+}
+.gx-combat-metric strong small {
+  font-size: 19px;
+}
+.gx-combat-metric > div > span {
+  margin-left: auto;
+  font-size: 12px;
+  white-space: nowrap;
+  color: #23df7d;
+}
+.gx-training-demo-note {
+  margin: 8px 0 0;
+  color: #737b80;
+  text-align: center;
+  font-size: 10px;
+  letter-spacing: 0.5px;
+}
+@media (max-width: 374px) {
+  .gx-mobile-training {
+    padding-inline: 7px;
+  }
+  .gx-training-session {
+    gap: 7px;
+    padding-left: 9px;
+  }
+  .gx-training-session-icon {
+    width: 27px;
+  }
+  .gx-training-session-copy h3 {
+    font-size: 15px;
+  }
+  .gx-training-status {
+    font-size: 10px;
+    padding-inline: 4px;
+  }
+  .gx-combat-metric {
+    padding: 7px;
+  }
+  .gx-combat-metric h3 {
+    font-size: 10px;
+  }
+  .gx-combat-metric > div:not(.gx-combat-progress) {
+    gap: 5px;
+  }
+  .gx-combat-icon {
+    width: 24px;
+  }
+  .gx-combat-metric strong {
+    font-size: 23px;
+  }
+}
