@@ -1,71 +1,73 @@
 <div align="center">
+  <img src="public/og-image.png" alt="GayongX Athlete Analytics Dashboard Preview" width="100%" />
+
   <h1>GAYONGX Athlete Analytics</h1>
   <p><strong>Responsive Silat Performance Analytics & Athlete Conditioning Dashboard</strong></p>
+
   <p>
-    <a href="https://gxaa.syahmiaof.my"><img src="https://img.shields.io/badge/Demo-Live-101713?style=for-the-badge&logoColor=60E1B5&labelColor=101713" alt="Demo" /></a>
-    <a href="https://github.com/syahmiaof/gayongx-athlete-analytics"><img src="https://img.shields.io/badge/Source-GitHub-101713?style=for-the-badge&logo=github&logoColor=60E1B5&labelColor=101713" alt="GitHub" /></a>
-    <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-101713?style=for-the-badge&logoColor=60E1B5&labelColor=101713" alt="License" /></a>
-    <a href="https://syahmiaof.my"><img src="https://img.shields.io/badge/Author-syahmiaof-101713?style=for-the-badge&logo=vercel&logoColor=60E1B5&labelColor=101713" alt="Author" /></a>
+    <a href="https://gxaa.syahmiaof.my"><img src="https://img.shields.io/badge/Demo-gxaa.syahmiaof.my-60E1B5?style=for-the-badge&logo=vercel&logoColor=60E1B5&labelColor=101713" alt="Demo Live" /></a>
+    <a href="https://github.com/syahmiaof/gayongx-athlete-analytics"><img src="https://img.shields.io/badge/Source-GitHub-60E1B5?style=for-the-badge&logo=github&logoColor=60E1B5&labelColor=101713" alt="GitHub Source" /></a>
+    <a href="LICENSE"><img src="https://img.shields.io/badge/License-All_Rights_Reserved-60E1B5?style=for-the-badge&logoColor=60E1B5&labelColor=101713" alt="License All Rights Reserved" /></a>
+    <a href="https://syahmiaof.my"><img src="https://img.shields.io/badge/Author-syahmiaof-60E1B5?style=for-the-badge&logo=readme&logoColor=60E1B5&labelColor=101713" alt="Author syahmiaof" /></a>
+  </p>
+
+  <p>
+    <img src="https://img.shields.io/badge/React_19-101713?style=for-the-badge&logo=react&logoColor=60E1B5" alt="React 19" />
+    <img src="https://img.shields.io/badge/TypeScript-101713?style=for-the-badge&logo=typescript&logoColor=60E1B5" alt="TypeScript" />
+    <img src="https://img.shields.io/badge/Vite-101713?style=for-the-badge&logo=vite&logoColor=60E1B5" alt="Vite" />
+    <img src="https://img.shields.io/badge/Tailwind_CSS-101713?style=for-the-badge&logo=tailwindcss&logoColor=60E1B5" alt="Tailwind CSS" />
+    <img src="https://img.shields.io/badge/SVG_Data_Viz-101713?style=for-the-badge&logo=d3.js&logoColor=60E1B5" alt="SVG Data Viz" />
+    <img src="https://img.shields.io/badge/Playwright-101713?style=for-the-badge&logo=playwright&logoColor=60E1B5" alt="Playwright" />
+    <img src="https://img.shields.io/badge/Vercel-101713?style=for-the-badge&logo=vercel&logoColor=60E1B5" alt="Vercel" />
   </p>
 </div>
 
-![GayongX Athlete Analytics dashboard](https://raw.githubusercontent.com/syahmiaof/syahmiaof/main/public/images/gayongx-athlete-analytics.png)
+---
 
-Screenshot-driven React + TypeScript frontend demo. All athlete profiles, measurements, competition records and benchmarks are synthetic; this is not an official performance or medical service.
+## Overview
 
-## Run
+- **Functionality**: Specialized silat sports-science performance cockpit featuring typed synthetic benchmarks, interactive radar charts, biometric conditioning tracking, and combat video review annotations.
+- **Aesthetic Value**: High-contrast athletic dashboard aesthetic blending dense numerical readouts with responsive SVG radar graphs, modular card surfaces, and mobile safe-area adaptations.
+- **Business Value**: Equips martial arts coaches with empirical training load analytics, pinpointing reaction velocity and aerobic endurance deficits ahead of tournament selections.
 
-Use Node.js 24.x (the tested Vercel runtime).
+Screenshot-driven React + TypeScript frontend demo. All athlete profiles, measurements, competition records, and benchmarks are synthetic; this is an exploratory athletic performance dashboard prototype.
 
-```sh
-npm install
-npm run dev
-npm run typecheck
-npm run lint
-npm run build
-npm run preview -- --host 127.0.0.1 --port 4173
-```
+---
 
-No environment variables, API keys, backend or database are needed. Settings persist locally; training/profile/nutrition edits last for the current mounted screen. Reports export a local CSV. Video screens demonstrate annotations; no video files or playback are claimed.
+## Platform Scope & Architecture
 
-## Verification
+No external database or server runtime dependencies are required. Settings persist locally, and training/profile/nutrition edits are reactive across the mounted application screen. Reports export directly to local CSV. Video review screens illustrate tactical frame annotations.
 
-With the production preview running on port 4173:
+- **Hash-Routing Architecture**: All twelve routes use hash URLs (e.g. `/#/latihan`) to ensure seamless refresh tolerance on static edge hosts.
+- **Component Breakdown**:
+  - `src/App.tsx`: Responsive application shell and hash routing provider.
+  - `src/components/layout`: Brand header, official PSSGM emblem sidebar, and athlete hero strip.
+  - `src/components/dashboard`, `charts`: High-density desktop panels and interactive SVG radar/trend charts.
+  - `src/components/mobile`: Dedicated mobile dashboard, training composition, and safe-area touch navigation.
+  - `src/components/screens`: Full demo modules sharing reusable `ScreenPrimitives`.
+  - `src/data`: Typed synthetic data models with explicit benchmark provenance.
+  - `src/index.css`: Shared design tokens and viewport-specific composition.
 
-```sh
-npx playwright install chromium
-npm run qa
-```
+---
 
-Browser evidence and screenshots are written to `artifacts/`. `QA_URL` can point the checks at another preview URL.
+## Reference and Assets
 
-## Reference and assets
+The supplied references are `athlete-desktop.jpg` and `athlete-mobile.jpg`, archived under `public/images/`. The app reconstructs the complete screen flow with responsive SVG charts and modular cards without artificial device frames.
 
-The supplied references are `athlete-desktop.jpg` (1672×941) and `athlete-mobile.jpg` (941×1672), archived under `public/images/`. They correspond to the PNG names in the brief. They are not used as page backgrounds. The mobile reference is a promotional two-phone composition; the app reconstructs its inner screens, without a fake device frame/status bar.
+`public/assets/pssgm-logo.png` is an unchanged copy of the official PSSGM emblem. Photographic demo assets are presentation crops extracted from the supplied references, strictly for demonstration purposes.
 
-`public/assets/pssgm-logo.png` is an unchanged copy of the official `pssgm-logo.png` (also archived under `public/images/`). The photographic `*-demo` assets are small presentation crops extracted from the supplied desktop and mobile references, explicitly permitted for this demo. Do not treat these as verified athlete identities or redistribute them as independently licensed stock photographs.
+---
 
-The UI, charts and navigation are real React/SVG/CSS. Barlow and Barlow Condensed load through Google Fonts, with sans-serif fallbacks.
+## Continuous Integration & Quality
 
-## Static hosting
+Platform stability is maintained through automated continuous integration workflows:
+- **Type Checking**: Strict TypeScript validation across all modules.
+- **Automated Verification**: GitHub Actions workflow (`.github/workflows/ci.yml`) validates linting and production bundling on every push to `main`.
+- **Browser QA**: Automated Playwright test coverage verifying route health, interaction stability, and visual layout fidelity.
 
-Vercel: framework Vite, build command `npm run build`, output directory `dist`, no environment variables. `vercel.json` includes an SPA fallback. All twelve routes use hash URLs (for example `/#/latihan`) and survive refresh on static hosting.
+---
 
-GitHub repository: https://github.com/syahmiaof/gayongx-athlete-analytics. Vercel project: gayongx-athlete-analytics. Production publication is managed from the main branch.
+## License
 
-## Structure
-
-- `src/App.tsx`: responsive shell and hash routing.
-- `src/components/layout`: brand, official logo sidebar and athlete hero.
-- `src/components/dashboard`, `charts`: compact desktop panels and interactive SVG charts.
-- `src/components/mobile`: dedicated dashboard, training composition and safe-area navigation.
-- `src/components/screens`: full demo modules sharing `ScreenPrimitives`.
-- `src/data`: typed synthetic data, with explicit benchmark provenance.
-- `src/index.css`: shared design tokens and viewport-specific composition.
-- `scripts/verify.mjs`: browser route, responsive, asset, console and interaction checks.
-
-See `artifacts/FINAL-REPORT.md` for visual parity limits and test evidence.
-
-## Builder
-
-[Muhammad Syahmi](https://syahmiaof.my)
+Copyright (c) 2026 Muhammad Syahmi ([syahmiaof](https://syahmiaof.my)). All rights reserved.  
+Proprietary source code created solely for demonstration and portfolio showcase purposes.
